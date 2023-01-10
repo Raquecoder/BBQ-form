@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Source Sans Pro light', 'Source Sans Pro black', sans-serif;
+    font-size: 1rem;
+    color:#404040;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*typography*/
+
+h1{
+    font-family:'Source Sans Pro light';
+    font-size:2.25rem;
+    color:#ffffff;
+    font-weight:300;
+    letter-spacing:0;
+    margin:0;
+}
+
+strong{
+    font-family:'Source Sans Pro black' ;
+    font-size:3.5rem;
+    opacity:0.7;
+    font-weight: 900;
+}
+h3{
+    font-family: source Sans Pro;
+    font-size: 1.75rem;
+    color:#F18119;
+    text-transform: uppercase;
+}
+h4{
+    font-family: source Sans Pro;
+    font-size:1.438rem ;
+    color:#F18119;
+    text-transform: uppercase; 
+    margin-top:0;
+}
+
+h2{
+    color:#404040;
+    font-size: 1.75rem;
+    margin:0;
+}
+p{
+    font-family: Source Sans Pro,Light;
+    font-size:1.125rem;
+    color:#5A5A5A;
+    margin:0;
+}
+h6{
+    font-size:0.625rem;
+    letter-spacing: 1px;
+}
+.top-text{
+    font-size:0.625rem;
+    margin:-10px;
+    padding-top:2px;
+    color:#F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top:1px;
+    order:-1;
+    border-top:5px solid #F18119 ;
+    border-image:linear-gradient(to left,#FF713B, #ffa51d)1;
+   
+    
+}
+/* Form */
+.form{
+
+    
+}
+input, button{
+    font-family: inherit;
+    text-align: inherit;
+    width:70%;
+    max-width: 300px;
+    padding:.5em;
+    margin-top:.5em;
+    border-radius: 5px;
+    border: 1px #404040 solid;
+    display:line-block;
+
+}
+button{
+    background: linear-gradient(to left,#FF713B, #FFA51D );
+    padding: 1em 1.5em;
+    font-size: .625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color:#ffffff;
+    cursor:pointer;
+    border:0;
+    transform:scale(1);
+    transition: 250ms;
+}
+input{
+    transform:scale(1);
+    transition: 250ms;
+}
+
+input:focus{
+    transform:scale(1.1);
+}
+
+
+button:hover,
+button:focus {
+    color:black;
+    transform:scale(1.1);
+}
+
+
+/*Layout*/
+
+
+.container-1{
+    
+    background-image: url(dark-ribs.jpg);
+    background-color: #404040;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0.5em 2em;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    min-height: 50vh;
+    /*backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);*/
+}
+.container-2{
+  padding: 2em 1em;
+
+}
+
+
+/*media queries*/
+@media(min-width:500px){
+   body{
+    display:flex;
+    font-size:1.125rem;
+   }
+   h1{
+    font-size:1.75em;
+   }
+   
+   .container-1,
+    .container-2{
+    width: 50%;
+    min-height:100vh;
+   }
+   .container-2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+}
